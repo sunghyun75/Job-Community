@@ -2,6 +2,7 @@ import { Link, Outlet } from 'react-router';
 import logo from '@/assets/chat-right-quote.svg';
 import sun from '@/assets/sun.svg';
 import profile from '@/assets/person-circle.svg';
+import { wiseSaying } from '@/lib/utils';
 
 export default function GlobalLayout() {
   return (
@@ -24,8 +25,7 @@ export default function GlobalLayout() {
         <Outlet />
       </main>
       <footer className="border-t py-5 text-center text-muted-forground">
-        우리가 할 수 있는 최선을 다할 때, 우리 혹은 타인의 삶에 어떤 기적이
-        나타나는 지 아무도 모른다.
+        {wiseSaying()}
       </footer>
     </div>
   );
